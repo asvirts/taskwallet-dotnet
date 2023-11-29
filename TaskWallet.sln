@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWallet.Server", "Server\TaskWallet.Server.csproj", "{B29EAD01-D653-4BDD-85C5-925ECAC23422}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskWallet.Server", "Server\TaskWallet.Server.csproj", "{B29EAD01-D653-4BDD-85C5-925ECAC23422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWallet.Client", "Client\TaskWallet.Client.csproj", "{7BB1B471-F4DA-4913-8BFD-5DFE8F74DB10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskWallet.Client", "Client\TaskWallet.Client.csproj", "{7BB1B471-F4DA-4913-8BFD-5DFE8F74DB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWallet.Shared", "Shared\TaskWallet.Shared.csproj", "{E2CBEEC5-3087-41AA-98FD-74A4C76BF8D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskWallet.Shared", "Shared\TaskWallet.Shared.csproj", "{E2CBEEC5-3087-41AA-98FD-74A4C76BF8D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
