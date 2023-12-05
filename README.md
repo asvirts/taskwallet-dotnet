@@ -1,3 +1,3 @@
 # TaskWallet
 
-It's like my other project, but this time in .NET 7
+ASP.NET 7 with WebAssembly

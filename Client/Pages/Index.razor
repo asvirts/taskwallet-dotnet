@@ -1,9 +1,35 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
+<p>Pokemon</p>
 
-<h1>Hey, y'all</h1>
+@foreach (var pokemon in pokemons)
+{
+    <p>@pokemon.name</p>
+}
 
-Welcome to this app.
+@code {
+    private HttpClient? httpClient;
+    private string? exampleData;
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    protected override async Task OnInitializedAsync()
+    {
+        httpClient = new HttpClient();
+        await GetExampleData();
+    }
+
+    private async Task GetExampleData()
+    {
+        var response = await httpClient!.GetAsync("https://pokeapi.co/api/v2/pokemon");
+        if (response.IsSuccessStatusCode)
+        {
+            exampleData = await response.Content.ReadAsStringAsync();
+        }
+        else
+        {
+            // Handle the error here
+        }
+    }
+
+    
+}
