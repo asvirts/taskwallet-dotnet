@@ -1,34 +1,10 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
-<p>Pokemon</p>
-
-@foreach (var pokemon in pokemons)
-{
-    <p>@pokemon.name</p>
-}
+<p>Tasks</p>
 
 @code {
-    private HttpClient? httpClient;
-    private string? exampleData;
-
-    protected override async Task OnInitializedAsync()
-    {
-        httpClient = new HttpClient();
-        await GetExampleData();
-    }
-
-    private async Task GetExampleData()
-    {
-        var response = await httpClient!.GetAsync("https://pokeapi.co/api/v2/pokemon");
-        if (response.IsSuccessStatusCode)
-        {
-            exampleData = await response.Content.ReadAsStringAsync();
-        }
-        else
-        {
-            // Handle the error here
-        }
-    }
+    
+    
 
 }
