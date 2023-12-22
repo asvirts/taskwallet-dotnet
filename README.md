@@ -1,3 +1,3 @@
 # TaskWallet
 
-ASP.NET 7 with WebAssembly
+ASP.NET 8 with WebAssembly
